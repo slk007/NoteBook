@@ -21,12 +21,14 @@ pip install django
 **Activating environment**
 ```
 source activate yourenvname
+conda activate yourenvname
 ```
 
 
 **Deactivating environments**
 ```
 source deactivate
+conda deactivate
 ```
 
 

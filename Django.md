@@ -1,5 +1,6 @@
 ## Django
 
+Basic commands of Django are here
 
 **Creating a new project:**
 ```python

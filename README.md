@@ -9,3 +9,5 @@ Git notes are here --> [Git](https://github.com/slk007/NoteBook/blob/master/Git.
 Conda notes are here --> [Conda](https://github.com/slk007/NoteBook/blob/master/Conda.md)
 
 Database notes are here --> [DBMS](https://github.com/slk007/DataBase)
+
+[This the name for the link i just pasted](https://github.com/slk007/DataBase/blob/master/README.md)

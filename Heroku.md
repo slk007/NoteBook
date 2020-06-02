@@ -50,7 +50,7 @@ pip install django-heroku
 pip install gunicorn
 pip install python-decouple
 ```
-#if heroku shows some error(in ubuntu),then
+**if heroku shows some error(in ubuntu),then**
 ```
 sudo apt install libpq-dev
 ```
@@ -94,7 +94,7 @@ DATABASES['default'].update(db_from_env)
 ```
 
 ------------------------------------------------
-create file Procfile:
+**create file Procfile:**
 ```
 web: gunicorn <projectname>.wsgi
 ```
@@ -107,7 +107,7 @@ Use command:
 pip freeze > requirements.txt
 ```
 --------------------------------------------------------------
-SECRET_KEY needs to be added into settings from heroku dashboard of the app
+**SECRET_KEY needs to be added into settings from heroku dashboard of the app**
 
 
 Add remote to git of heroku:
@@ -129,9 +129,4 @@ eg:
 heroku run python manage.py runserver
 heroku run python manage.py makemigrations
 heroku run python manage.py createsuperuser
-
-
-
-
-
 ```

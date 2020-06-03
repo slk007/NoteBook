@@ -86,7 +86,14 @@ locals:
 django_heroku.settings(locals())
 ```
 
+Change DATABASES in settings.py:
 ```
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    }
+}
+
 DATABASES['default'] = dj_database_url.config(default='<URI from heroku-django addons > setting>')
 
 db_from_env = dj_database_url.config(conn_max_age=600)
@@ -107,7 +114,15 @@ Use command:
 pip freeze > requirements.txt
 ```
 --------------------------------------------------------------
+
 **SECRET_KEY needs to be added into settings from heroku dashboard of the app**
+
+-------------------------------------------------------------
+
+Set allowed host:
+```
+ALLOWED_HOSTS = ['<herokuappname>.herokuapp.com']
+```
 
 
 Add remote to git of heroku:
